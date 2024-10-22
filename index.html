@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Report Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="report-card">
+    <header class="report-header">
+      <h1>Student Report Card</h1>
+      <div class="student-info">
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Grade:</strong> 10</p>
+        <p><strong>School:</strong> XYZ High School</p>
+      </div>
+    </header>
+    <section class="subjects">
+      <table id="subjectsTable">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mathematics</td>
+            <td><input type="number" id="mathMarks" class="marksInput" /></td>
+            <td class="status"></td>
+          </tr>
+          <tr>
+            <td>Science</td>
+            <td><input type="number" id="scienceMarks" class="marksInput" /></td>
+            <td class="status"></td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td><input type="number" id="englishMarks" class="marksInput" /></td>
+            <td class="status"></td>
+          </tr>
+          <tr>
+            <td>History</td>
+            <td><input type="number" id="historyMarks" class="marksInput" /></td>
+            <td class="status"></td>
+          </tr>
+          <tr>
+            <td>Physical Education</td>
+            <td><input type="number" id="peMarks" class="marksInput" /></td>
+            <td class="status"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer">
+      <button class="btn" onclick="calculateResults()">Generate Report</button>
+      <div id="reportSummary">
+        <p>Total Marks: <span id="totalMarks">0</span></p>
+        <p>Average Marks: <span id="averageMarks">0</span></p>
+        <p id="finalStatus">Status: </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
